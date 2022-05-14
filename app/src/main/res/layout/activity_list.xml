@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListActivity">
+    tools:context=".ui.listx.ListActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:foregroundGravity="center"
         app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,10 +16,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/atvList_imgUser"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:contentDescription="Random Android Photo"
+            android:id="@+id/ivProfile"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/desc_activity_main_ivProfile"
             app:srcCompat="@mipmap/ic_launcher_round" />
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
